@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hero {
+    background-color: #4CAF50;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about, #skills, #projects, #contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill, .project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .skills-container, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
